@@ -15,6 +15,12 @@ body {
 
 /* navegaçao */
 
+
+#fundo {
+  background: url(img/fundo.png);
+  width: 100%;
+}
+
 header {
   background-image: url(img/fundo.png);
   height: 15em;
@@ -25,7 +31,6 @@ header {
   align-items: center;
   flex-direction: row;
   margin-bottom: -3em;
-  widht: 100%;
 }
 
 header ul {
