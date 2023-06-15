@@ -1,0 +1,281 @@
+/* formatação geral */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f2ec;
+  font-size: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* formtação dos elementos da página */
+
+/* navegaçao */
+
+header {
+  background-image: url(img/fundo.png);
+  height: 15em;
+  padding: 5em 15em;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: -3em;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li a {
+  color: #7a5511;
+  font-size: 1.4em;
+  display: block;
+  margin-right: 1.3em;
+  text-decoration: none;
+}
+
+/* navegaçao */
+
+/* Entrada principal do museu e historia */
+
+#pai1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  border: 5px solid rgba(0, 0, 255, 0);
+  width: 110em;
+  height: 100em;
+  margin: -30px auto;
+
+}
+
+/* inicio main */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+  height: 80em;
+  border: 1px rgba(255, 0, 0, 0) solid;
+  width: 75%;
+  margin-right: 1.5em;
+}
+
+#imagem-museu {
+  border: #ecd5e900 3px solid;
+  height: 350px;
+  background-image: url(img/museu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1.5em;
+}
+
+
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#historia {
+  width: 31em;
+  height: 25em;
+}
+
+#exposicao {
+  width: 31em;
+  height: 23em;
+}
+
+#video,
+#mapa {
+  width: 31em;
+  height: 20em;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+p {
+  font-size: 17px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(4, 85, 4);
+}
+
+section ul li a {
+  color: #7a5511;
+  font-size: 1.4em;
+  padding: 5px;
+  line-height: 1.5em;
+}
+
+/* fim main */
+
+/* inicio aside */
+aside {
+
+  width: 30%;
+  height: 90em;
+  background-color: #eceae3;
+
+}
+
+#depoimento {
+  border: #ce111b00 solid 2px;
+  background-image: url(img/depoimento.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+#reserva {
+  background-color: #bbae96;
+  padding: 1em 1.5em;
+  height: 200px;
+  color: #fdfdfc;
+}
+
+h2 {
+  color: #7a5511;
+  margin-bottom: 0.8em;
+  background-color: #e2e0d9;
+  display: inline-block;
+  padding: 5px;
+}
+
+input {
+  display: inline;
+}
+
+input[type=date] {
+  color: #694e1c;
+  background-color: #cfc3ad;
+  border: none;
+  width: 8em;
+  display: inline;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
+}
+
+input[type=number] {
+  color: #694e1c;
+  background-color: #cfc3ad;
+  border: none;
+  border-radius: 5px;
+  width: 3em;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 5px 0 5px 0;
+
+}
+
+input[type=submit] {
+  display: block;
+  margin: 1em auto;
+  height: 3em;
+  width: 17em;
+  border: #694e1c;
+  color: #694e1c;
+}
+
+input[type=submit]:hover {
+  background-color: #e7e0d0;
+}
+
+#galeria {
+  width: 8em;
+  background: #e2e0d9;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#galeria h2 {
+  display: block;
+  margin: 0;
+}
+
+.fotos {
+  border: #571c6900 2px solid;
+  display: flex;
+  background: url(img/fundo-foto.png);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  width: 12em;
+  height: 12em;
+  margin: 1em;
+}
+
+#bloco-galeria {
+  height: 35em;
+  width: 26em;
+  background-color: black;
+}
+
+.imagens {
+  margin: 0 auto;
+}
+
+footer {
+  font-size: 1.5em;
+  position: relative;
+  left: -150%;
+  text-align: center;
+  border: 1px #571c6900 solid;
+  background: url(img/fundo-rodape.png) top no-repeat;
+  margin-top: 3em;
+  width: 600px;
+  height: 200px;
+  padding-top: 50px;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+footer ul li a {
+  font-weight: 200;
+  margin: 20px 5px;
+  text-decoration: none;
+  color: #7a5511;
+  display: inline;
+}
+
+footer p {
+  color: #5757579d;
+}
+
+p a {
+  color: #7a5511b2;
+}
+
+#links {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+
+
+/* fim aside */
